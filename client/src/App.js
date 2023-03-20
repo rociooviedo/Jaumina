@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Cart from './vistas/Cart';
 import Login from './vistas/Login';
 import Register from './vistas/Register';
+import Principal from './vistas/Principal';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route path='/cart' exact Component={Cart} />
           <Route path='/login' exact Component={Login} />
           <Route path='/register' exact Component={Register} />
+          <Route path='/principal' exact Component={Principal} />
         </Routes>
       </BrowserRouter>
     </div>

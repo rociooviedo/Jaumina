@@ -14,7 +14,7 @@ export default function Register() {
 
     const dispatch = useDispatch();
     function register() {
-        if (password != confirmPassword) {
+        if (password !== confirmPassword) {
             alert("las contrasenhas no coinciden")
         }
         else {

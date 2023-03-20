@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const pizzaSchema = mongoose.Schema({
+const BebidaSchema = mongoose.Schema({
     name: {type: String, require},
     varients:[],
     prices: [],
@@ -10,5 +10,5 @@ const pizzaSchema = mongoose.Schema({
 },{
     timestamps: true,
 })
-const PizzaModel = mongoose.model('pizzas' , pizzaSchema)
-module.exports = PizzaModel
+const BebidaModel = mongoose.model('bebidas' , BebidaSchema)
+module.exports = BebidaModel

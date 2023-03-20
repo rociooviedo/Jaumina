@@ -15,22 +15,22 @@ const Cart =()=> {
         <div>
             <div className="row justify-content-center  p-2">
                 <div className="col-md-6">
-                    <h2 style={{ fontSize: '40px' }}>My cart</h2>
+                    <h2 style={{ fontSize: '40px' }}>Mi carrito</h2>
 
                     {cartItems.map(item => {
                         return <div className="flex-container">
 
                             <div className='text-left m-1 w-100'>
-                                <h1>{item.name} [{item.varient}]</h1>
-                                <h1>Price : {item.quantity} * {item.prices[0][item.varient]} = {item.price}</h1>
-                                <h1 style={{ display: 'inline' }}>Quantity : </h1>
+                                <h1>{item.nombre} [{item.varient}]</h1>
+                                <h1>Precio : {item.quantity} * {item.precios[0][item.varient]} = {item.precio}</h1>
+                                <h1 style={{ display: 'inline' }}>Cantidad: </h1>
                                 <i className="fa fa-plus" aria-hidden="true" onClick={() => { dispatch(addToCart(item, item.quantity + 1, item.varient)) }}></i>
                                 <b>{item.quantity}</b>
                                 <i className="fa fa-minus" aria-hidden="true" onClick={() => { dispatch(addToCart(item, item.quantity - 1, item.varient)) }}></i>
                                 <hr />
                             </div>
                             <div className='m-1 w-100'>
-                                <img src={item.image} style={{ height: '80px', height: '80px' }} />
+                                <img src={item.imagen} style={{ height: '80px', height: '80px' }} />
                             </div>
                             <div className='m-1 w-100'>
                                 <i className="fa fa-trash mt-5" aria-hidden="true" onClick={() => { dispatch(deleteFromCart(item)) }}></i>

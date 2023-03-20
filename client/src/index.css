@@ -27,7 +27,7 @@ h1{
   display: flex !important;
 }
 .btn{
-  background-color: red !important;
+  background-color: lightskyblue !important;
   color: white !important;
 }
 select{
@@ -39,13 +39,19 @@ select{
   margin: 5px !important;
 }
 .fa-minus{
-  color: red;
+  color:  lightskyblue;
   margin: 5px !important;
 }
 .fa-trash{
-  color: red;
+  color:  lightskyblue;
 }
 input{
   margin-top: 10px !important;
   box-shadow: none !important;
+}
+.aa{
+  width: 300px;
+    height: 300px;
+    display: inline-block;
+    
 }

@@ -1,21 +1,21 @@
 const express = require ('express');
 const db = require('../server/config/db.config')
-const Pizza = require('../server/models/pizza.model')
+const BebidaModel = require('../server/models/bebidas.model')
 
 
 const app = express();
 
 app.use(express.json());
-const pizzasRoute = require('./routes_controllers/pizza.routes')
+const bebidasRoute = require('./routes_controllers/bebida.routes')
 const userRoute = require('./routes_controllers/user.routes')
-app.use('/api/pizzas/', pizzasRoute)
+app.use('/api/bebidas/', bebidasRoute)
 app.use('/api/users/', userRoute)
 app.get("/", (req, res)=>{
     res.send('Servidor trabajando' + port);
 });
 
-app.get("/getpizzas", (req,res) =>{
-    Pizza.find( {} , (err, docs)=>{
+app.get("/getbebidas", (req,res) =>{
+    BebidaModel.find( {} , (err, docs)=>{
         if(err){
             console.log(err)
         }

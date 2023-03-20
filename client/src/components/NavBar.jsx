@@ -8,8 +8,8 @@ export default function NavBar() {
     const dispatch = useDispatch();
     return (
         <div>
-            <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
-                <a className="navbar-brand" href="/"> PIZZA TIME</a>
+            <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-danger rounded">
+                <a className="navbar-brand" href="/"> Jaumina</a>
                 
                 <button
                     className="navbar-toggler"
@@ -37,20 +37,20 @@ export default function NavBar() {
                                     {currentUser.name}
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a className="dropdown-item" href="/orders">Orders</a>
+                                    <a className="dropdown-item" href="/orders">Pedidos</a>
                                     <a className="dropdown-item" href="#" onClick={() => { dispatch(logoutUser()) }}><li>Logout</li></a>
                                 </div>
                             </div>
                         ) : (
                             <li className="nav-item">
-                                <a className="nav-link" href="/login">
+                                <a className="nav-link link-light" href="/login">
                                     Login
                                 </a>
                             </li>
                         )}
                         <li className="nav-item">
-                            <a className="nav-link" href="/cart">
-                                Cart {cartstate.cartItems.length}
+                            <a className="nav-link link-light" href="/cart">
+                                Carrito {cartstate.cartItems.length}
                             </a>
                         </li>
                     </ul>

@@ -17,8 +17,8 @@ export default function Checkout({ subtotal }) {
     return (
         <div>            
             {loading && (<Loading />)}
-            {error && (<Error error='Something went wrong' />)}
-            {success && (<Success success='Your Order Placed Successfully' />)}
+            {error && (<Error error='Algo salio mal' />)}
+            {success && (<Success success='Su orden a sido ejecutada.' />)}
 
             <StripeCheckout
                 amount={subtotal * 100}
@@ -27,7 +27,7 @@ export default function Checkout({ subtotal }) {
                 stripeKey='pk_test_51K1Q1CSGyajYq73prUQG2AUzg9QkKhSXeWUKUlJy2Er8AewG32DnEE1feEUOVQkKY6cpcKbQKC2VxdFqm6dVdu8n00XxuF6HP4'
                 currency='INR'
             >
-                <button className='btn'>Pay Now</button>
+                <button className='btn'>Pagar Ahora</button>
             </StripeCheckout>
         </div>
     )

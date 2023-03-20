@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://127.0.0.1:27017/PIZZATIME_DB' , {useUnifiedTopology:true , useNewUrlParser:true})
+mongoose.connect('mongodb+srv://niaras27:Niaras27@cluster0.6ixotkv.mongodb.net/?retryWrites=true&w=majority' , {useUnifiedTopology:true , useNewUrlParser:true})
 
 var db = mongoose.connection
 

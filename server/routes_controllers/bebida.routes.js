@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const PizzaModel = require('../models/pizza.model')
+const BebidaModel = require('../models/bebidas.model')
 
-router.get("/getallpizzas", async(req, res)=>{
+router.get("/getallbebidas", async(req, res)=>{
     try{
-        const pizzas = await PizzaModel.find({})
-        res.send(pizzas)
+        const bebidas = await BebidaModel.find({})
+        res.send(bebidas)
     } catch(error){
         return res.status(400).json({message: error});
     }
