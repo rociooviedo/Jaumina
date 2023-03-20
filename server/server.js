@@ -14,7 +14,7 @@ app.get("/", (req, res)=>{
     res.send('Servidor trabajando' + port);
 });
 
-app.get("/getbebidas", (req,res) =>{
+app.get("/getAllbebidas", (req,res) =>{
     BebidaModel.find( {} , (err, docs)=>{
         if(err){
             console.log(err)
