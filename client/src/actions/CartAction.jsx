@@ -1,13 +1,13 @@
 export const addToCart = (bebida, quantity, varient) => (dispatch, getState) => {
 
     var cartItem = {
-        name: bebida.name,
+        nombre: bebida.nombre,
         _id: bebida._id,
-        image: bebida.image,
+        imagen: bebida.imagen,
         varient: varient,
         quantity: Number(quantity),
-        prices: bebida.prices,
-        price: bebida.prices[0][varient] * quantity
+        precios: bebida.precios,
+        precio: bebida.precios[0][varient] * quantity
     }
 
     if (cartItem.quantity > 10) {
@@ -33,6 +33,6 @@ export const addToCart = (bebida, quantity, varient) => (dispatch, getState) => 
 
 export const deleteFromCart = (bebida) => (dispatch, getState) => {
     dispatch({ type: 'DELETE_FROM_CART', payload: bebida })
-    const cartItems = getState().CartReducer.cartItems
+    const cartItems = getState().cartReducer.cartItems
     localStorage.setItem('cartItems', JSON.stringify(cartItems))
 }

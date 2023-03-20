@@ -9,7 +9,7 @@ const Cart =()=> {
     const cartState = useSelector(state => state.cartReducer);
     const cartItems = cartState.cartItems;
     console.log("valor", cartItems);
-    var subTotal = cartItems.reduce((x, item) => x + item.price, 0)
+    var subTotal = cartItems.reduce((x, item) => x + item.precio, 0)
     const dispatch = useDispatch();
     return (
         <div>
@@ -40,7 +40,7 @@ const Cart =()=> {
                     })}
                 </div>
                 <div className="col-md-4 text-right">
-                    <h2 style={{ fontSize: '40px' }}>SubTotal:{subTotal}/Rs-</h2>
+                    <h2 style={{ fontSize: '40px' }}>SubTotal:{subTotal}/Gs-</h2>
                     <Checkout subtotal={subTotal} />
 
                 </div>

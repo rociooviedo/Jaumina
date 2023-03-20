@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
 
 const BebidaSchema = mongoose.Schema({
-    name: {type: String, require},
+    nombre: {type: String, require},
     varients:[],
-    prices: [],
-    category: {type: String, require},
-    image:{type: String, require},
-    description: {type: String, require}
+    precios: [],
+    categoria: {type: String, require},
+    imagen:{type: String, require}
 },{
     timestamps: true,
 })

@@ -45,21 +45,22 @@ export default function Jaumina({ bebida }) {
             </div>
             <div className="flex-container">
                 <div className="m-1 w-100">
-                    <h1 className="mt-1">Precio: {bebida.precios[0][varient] * quantity} RS/-</h1>
+                    <h1 className="mt-1">Precio: {bebida.precios[0][varient] * quantity} Gs/-</h1>
                 </div>
                 <div className="m-1 w-100">
                     <button className="btn" onClick={addtocart}>AGREGAR</button>
                 </div>
+                <div>
+            </div>
             </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>{bebida.name}</Modal.Title>
+                    <Modal.Title>{bebida.nombre}</Modal.Title>
                 </Modal.Header>
 
                 <Modal.Body>
-                    <img src={bebida.image} className='img-fluid' style={{height:'400px' }}/>
-                    <p>{bebida.descripcion}</p>
-                </Modal.Body>s
+                    <img src={bebida.imagen} className='img-fluid' style={{height:'400px' }}/>
+                </Modal.Body>
                 <Modal.Footer>
                     <button className="btn" onClick={handleClose}>CERRAR</button>
                 </Modal.Footer>

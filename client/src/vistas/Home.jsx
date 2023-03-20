@@ -4,6 +4,7 @@ import Jaumina from "../components/Jaumina";
 import { getAllBebidas } from '../actions/BebidasAction'
 import Loading from "../components/loading";
 import Error from "../components/error";
+import Filter from "../components/Filtrar";
 
 export default function Home() {
     const dispatch = useDispatch()
@@ -15,6 +16,7 @@ export default function Home() {
     }, [])
     return (
         <div>
+            <Filter/>
             <h1>Bebidas!</h1>
             <div className="row justify-content-center">
                 {loading ? (

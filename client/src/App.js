@@ -8,6 +8,7 @@ import Cart from './vistas/Cart';
 import Login from './vistas/Login';
 import Register from './vistas/Register';
 import Principal from './vistas/Principal';
+import Ordersscreen from './vistas/Order';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
           <Route path='/login' exact Component={Login} />
           <Route path='/register' exact Component={Register} />
           <Route path='/principal' exact Component={Principal} />
+          <Route path='/order' exact Component={Ordersscreen} />\
         </Routes>
       </BrowserRouter>
     </div>

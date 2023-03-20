@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux'
-import { RegisterUser } from "../actions/userAction";
+import { registerUser } from "../actions/userAction";
 import Loading from "../components/loading";
 import Error from "../components/error";
 import Success from "../components/success";
@@ -24,7 +24,7 @@ export default function Register() {
                 password
             }
             console.log(user)
-            dispatch(RegisterUser(user))
+            dispatch(registerUser(user))
         }
     }
     return (

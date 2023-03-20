@@ -5,7 +5,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 6000,
       "pack": 33000
@@ -20,7 +20,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 5500,
       "pack": 30000
@@ -35,7 +35,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 10000,
       "pack": 55000
@@ -50,7 +50,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 10000,
       "pack": 55000
@@ -66,7 +66,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 13000,
       "pack": 60000
@@ -81,7 +81,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 13000,
       "pack": 60000
@@ -96,7 +96,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 10000,
       "pack": 50000
@@ -111,7 +111,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 7000,
       "pack": 40000
@@ -127,7 +127,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 1500,
       "pack": 8000
@@ -143,7 +143,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 2500,
       "pack": 10000
@@ -160,7 +160,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 6000,
       "pack": 55000
@@ -175,7 +175,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 14000,
       "pack": 80000
@@ -190,7 +190,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 8000,
       "pack": 45000
@@ -205,7 +205,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 8000,
       "pack": 45000
@@ -220,7 +220,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 7500,
       "pack": 40000
@@ -236,7 +236,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 6000,
       "pack": 33000
@@ -251,7 +251,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 5500,
       "pack": 30000
@@ -266,7 +266,7 @@ const bebidas =
   "unidad",
   "pack"
 ],
-"precio": [
+"precios": [
   {
     "unidad": 10000,
     "pack": 55000
@@ -281,7 +281,7 @@ const bebidas =
   "unidad",
   "pack"
 ],
-"precio": [
+"precios": [
   {
     "unidad": 10000,
     "pack": 55000
@@ -296,7 +296,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 13000,
       "pack": 60000
@@ -311,7 +311,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 13000,
       "pack": 60000
@@ -326,7 +326,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 10000,
       "pack": 50000
@@ -341,7 +341,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 7000,
       "pack": 40000
@@ -357,7 +357,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 1500,
       "pack": 8000
@@ -372,7 +372,7 @@ const bebidas =
     "unidad",
     "pack"
   ],
-  "precio": [
+  "precios": [
     {
       "unidad": 2500,
       "pack": 10000
